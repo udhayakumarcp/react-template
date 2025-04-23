@@ -1,54 +1,69 @@
-# React + TypeScript + Vite
+# Z-Transact
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Install NVM and Node
 
-Currently, two official plugins are available:
+### Install NVM
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To install the NVM, run the below command. For more info visit the [NVM's docs](https://github.com/nvm-sh/nvm?tab=readme-ov-file)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Install Node
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+Install the Node.js by using the below command.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
+```bash
+nvm install
+```
+
+```bash
+nvm use
+```
+
+## Getting the source code
+
+### Install the git
+
+Install the git in your system, by the following command
+
+```bash
+ sudo apt install git-all
+```
+
+for more visit the [official site for git-scm](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+### Clone the code
+
+Run the below command to clone the code
+
+```bash
+git clone git@github.com:YavarTech/z-transact-web.git
+
+cd z-transact-web.git
+```
+
+## Install packages
+
+Install the dependencies by using the below command.
+
+```bash
+npm install
+```
+
+## Run
+
+To run the app, use the below command.
+
+```bash
+npm run dev
+```
+
+## Build
+
+To build the app, run the below command.
+
+```bash
+npm run build
 ```
