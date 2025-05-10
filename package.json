@@ -1,7 +1,9 @@
 {
   "name": "react-template",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A fast, opinionated React + Vite + TypeScript starter template with Tailwind CSS, shadcn/ui, ESLint, Prettier, and Git hooks.",
+  "author": "Udhayakumar Chinnapalaniyappan",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
