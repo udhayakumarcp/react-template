@@ -1,69 +1,89 @@
-# Z-Transact
+# React Template
 
-## Install NVM and Node
+A **ready-to-use React project template** powered by Vite. This setup provides a fast development experience and includes all essential tools configured out of the box.
 
-### Install NVM
+## 🚀 Tech Stack & Tools Included
 
-To install the NVM, run the below command. For more info visit the [NVM's docs](https://github.com/nvm-sh/nvm?tab=readme-ov-file)
+- ⚛️ React
+- ⚡ Vite
+- 🧠 TypeScript
+- 🎨 Tailwind CSS
+- 🧱 shadcn/ui
+- 🧹 ESLint
+- 💅 Prettier
+- 🛡️ Husky (Git hooks)
+- 🧪 lint-staged
+
+---
+
+## 🧰 Prerequisites
+
+### 1. Install NVM (Node Version Manager)
+
+Run the following command to install NVM:
+
+**For Ubuntu**
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 ```
 
-### Install Node
+📚 For more details, refer to the [NVM documentation](https://github.com/nvm-sh/nvm?tab=readme-ov-file)
 
-Install the Node.js by using the below command.
+**For Windows**
 
-```bash
-nvm install
+Refer the [nvm-windows](https://github.com/coreybutler/nvm-windows)
+
+### 2. Install Node.js (Using NVM)
+
+Once NVM is installed, install and use the Node.js version specified in `.nvmrc`:
+
 ```
-
-```bash
+nvm install
 nvm use
 ```
 
-## Getting the source code
+> Mention version if you are using the windows
 
-### Install the git
+## 🧾 Cloning the Repository
 
-Install the git in your system, by the following command
+### 1. Install Git (if not already installed)
 
-```bash
- sudo apt install git-all
+```
+sudo apt install git-all
 ```
 
-for more visit the [official site for git-scm](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+**For Windows**
 
-### Clone the code
+🔗 Learn more at the official [Git documentation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-Run the below command to clone the code
+### 2. Clone the Repository
 
-```bash
-git clone git@github.com:YavarTech/z-transact-web.git
-
-cd z-transact-web.git
+```
+git clone https://github.com/udhayakumarcp/react-template.git
+cd react-template
 ```
 
-## Install packages
+# 📦 Install Dependencies
 
-Install the dependencies by using the below command.
+Install all required packages:
 
-```bash
+```
 npm install
 ```
 
-## Run
+# 💻 Run the Development Server
 
-To run the app, use the below command.
+Start the app in development mode:
 
-```bash
+```
 npm run dev
 ```
 
-## Build
+# 🏗️ Build for Production
 
-To build the app, run the below command.
+To build the project for production:
 
-```bash
+```
 npm run build
 ```
